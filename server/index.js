@@ -15,7 +15,7 @@ app.get('/', (_req, res) => res.send('Signaling server is running'));
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: ORIGIN, methods: ['GET','POST'] }
+  cors: { origin: "*", methods: ['GET','POST'] }
 });
 
 /**
