@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./app.css";
 import { MeshRTC } from "./webrtc";
 
-const SIGNALING_URL = "http://localhost:3001";
+const SIGNALING_URL =  import.meta.env.VITE_URL || "https://meshrtc-wetrtc-jeki.vercel.app/";
 
 export default function App() {
   const [roomId, setRoomId] = useState("demo");
