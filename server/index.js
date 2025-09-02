@@ -6,7 +6,8 @@ import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const ORIGIN = process.env.ORIGIN || 'http://localhost:5173';
+// const ORIGIN = process.env.ORIGIN || 'http://localhost:5173';
+const ORIGIN = process.env.ORIGIN || 'https://meshrtc-wetrtc-7399.vercel.app/';
 const MAX_PARTICIPANTS = parseInt(process.env.MAX_PARTICIPANTS || '4', 10);
 
 app.use(cors({ origin: ORIGIN, credentials: true }));
